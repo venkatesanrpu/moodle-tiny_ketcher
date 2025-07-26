@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "devDependencies": {
     "grunt": "^1.6.1",
-    "grunt-contrib-requirejs": "^2.0.0"
+    "grunt-contrib-requirejs": "^1.0.0"
   }
 }
