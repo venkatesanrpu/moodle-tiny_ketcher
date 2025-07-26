@@ -4,9 +4,19 @@ module.exports = function(grunt) {
       compile: {
         options: {
           baseUrl: "amd/src",
-          mainConfigFile: "amd/src/main.js",
-          name: "main",
-          out: "amd/build/main.min.js"
+          dir: "amd/build",
+          optimize: "uglify",
+          preserveLicenseComments: false,
+          generateSourceMaps: true,
+          modules: [
+            // List only your real AMD modules, e.g.:
+            { name: "commands" },
+            { name: "common" },
+            { name: "configuration" },
+            { name: "embed" },
+            { name: "options" },
+            { name: "plugin" }
+          ]
         }
       }
     }
